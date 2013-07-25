@@ -1,5 +1,6 @@
 $(function () {
-
+  
+  $('body').prepend('<p>press R to start new game</p>');
   $('body').prepend('<p>press spacebar to pause</p>');
   $('body').append('<table id="t1">');
   for (var i = 0; i < 20; i++ )

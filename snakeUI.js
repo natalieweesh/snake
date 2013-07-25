@@ -19,7 +19,11 @@ $(function () {
     case 32:
       game.pauseGame();
       break;
+    case 82:
+      location.reload();
+      break;
     }
+    
   });
   
 });

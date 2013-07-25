@@ -63,9 +63,7 @@ Snake.prototype.wallCollision = function() {
 
 }
 
-var Game = function() {
-  
-}
+var Game = function() {}
 
 Game.prototype.start = function() {
   that = this;
@@ -114,20 +112,17 @@ Game.prototype.eatApple = function() {
 
 Game.prototype.randomApple = function() {
 
-  var conflicts = false;
   do {
-    
+    var conflicts = false;
     randomSpot = [Math.floor(Math.random() * 20), Math.floor(Math.random() * 20)];
     this.snake.arr.forEach(function(coord) {
       if (coord[0] === randomSpot[0] && coord[1] === randomSpot[1]) {
         conflicts = true;
-      } else {
-        conflicts = false;
       }
       
     });
     
-  } while (conflicts);
+  } while (conflicts === true);
   return randomSpot;
 }
 
