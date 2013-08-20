@@ -7,4 +7,4 @@ Use arrow keys to move. Eat as many apples as you can to get the high score! Avo
 
 All JavaScript with minimal CSS styling.
 
-[w6d3 AppAcademy project]
+[w6d3]
